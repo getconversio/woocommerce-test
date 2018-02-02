@@ -1,0 +1,14 @@
+accesses:
+  settingsGeneral: true
+  settingsEmail:   true
+  systemStatus:    true
+  couponsRead:     true
+  couponsWrite:    true
+errors:
+  (empty array)
+data:
+  key_id:          94
+  user_id:         cb05c9d0-0820-11e8-9f6b-717b6da0ee5e
+  consumer_key:    ck_041c460c36d5f425afdaa2b40c6b36e43d04d207
+  consumer_secret: cs_da9f84033d5ead312c23548b3c1cde2bf6480a50
+  key_permissions: read_write
