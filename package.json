@@ -12,6 +12,7 @@
     "express-force-https": "^1.0.0",
     "express-nunjucks": "^2.2.3",
     "ioredis": "^3.2.2",
+    "node-sass": "^4.7.2",
     "nunjucks": "^3.0.1",
     "prettyjson": "^1.2.1",
     "ssl-root-cas": "^1.2.4",
@@ -20,9 +21,13 @@
   },
   "devDependencies": {
     "eslint": "^4.16.0",
-    "eslint-config-conversio": "^1.0.4"
+    "eslint-config-conversio": "^1.0.4",
+    "nodemon": "^1.14.12"
   },
   "scripts": {
-    "start": "node web.js"
+    "start": "node web.js",
+    "sass": "node-sass src/style.scss public/style.css",
+    "dev": "yarn sass & nodemon web.js",
+    "heroku-postbuild": "yarn sass"
   }
 }
