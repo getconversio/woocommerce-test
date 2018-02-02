@@ -1,5 +1,7 @@
 'use strict'
 
+require('ssl-root-cas').inject();
+
 const app = require('./lib/app'),
   config = require('./lib/config');
 
