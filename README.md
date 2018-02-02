@@ -16,6 +16,8 @@ A simple WooCommerce Rest API test app
 You'll need an instance of Redis running. To test this with a real WooCommerce store, you'll need
 something like ngrok to expose your localhost to the internet.
 
+For styling purposes there's a static page that can be accessed at this url: `/return?fake=1`
+
 ## Config variables
 
 ```
