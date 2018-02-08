@@ -88,6 +88,14 @@ form {
   font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
+input:focus:-moz-placeholder {
+  color:transparent;
+}
+
 .results {
   background-color: $white;
   border: 1px solid #dcdee0;
