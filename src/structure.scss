@@ -105,9 +105,15 @@ input:focus:-moz-placeholder {
   overflow-y: scroll;
   padding: 20px;
 
-  pre {
+  textarea {
+    border: 0;
+    color: $grayblue;
+    font-family: monospace;
+    font-size: 1em;
+    height: 230px;
     margin: 0;
     text-align: left;
+    width: 98%;
   }
 }
 
