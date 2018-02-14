@@ -1,6 +1,11 @@
 {% extends "_base.html" %}
 
 {% block body %}
-  <h2>Results</h2>
-  <pre>{{ results }}</pre>
+  <h2>Your results</h2>
+  <h3>It would be really helpful if you could forward these results to us.</h3>
+  <div class="results">
+    <textarea readonly>{{ results }}</textarea><br/>
+    <button class="btn clipboard" onclick="document.querySelector('textarea').select(); document.execCommand('copy'); this.innerText = 'Copied!'">Copy to clipboard</button>
+  </div>
+  <h3> Thank you for your help!</h3>
 {% endblock %}

@@ -1,0 +1,33 @@
+// Colours
+
+$darkgreen: #6a9d26;
+$green: #83bd31;
+$grayblue: #4d6370;
+$lightgrayblue: #849aa6;
+$white: #FFFFFF;
+
+// Fonts
+
+html, body {
+  font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@mixin smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Helpers
+
+@mixin rounded($radius: 2px) {
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius
+}
+
+@mixin transition($duration:0.2s,$ease:ease-out) {
+  -webkit-transition:all $duration $ease;
+  -moz-transition:all $duration $ease;
+  -o-transition:all $duration $ease;
+  transition:all $duration $ease;
+}

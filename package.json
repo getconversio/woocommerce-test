@@ -27,7 +27,8 @@
   "scripts": {
     "start": "node web.js",
     "sass": "node-sass src/style.scss public/style.css",
-    "dev": "yarn sass & nodemon web.js",
+    "sass-dev": "node-sass -w=src -r src/style.scss public/style.css",
+    "dev": "yarn sass & yarn sass-dev & nodemon web.js",
     "heroku-postbuild": "yarn sass"
   }
 }

@@ -1,0 +1,124 @@
+body {
+  background: url(../images/bg_icons.png) no-repeat top center #F8F8F8;
+  color: $grayblue;
+  padding: 0 20px;
+  text-align: center;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+}
+
+h1 {
+  background: url(../images/conversio-logo.png) no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 44px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  position: relative;
+  width: 200px;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+h3 {
+  color: $lightgrayblue;
+  margin: 10px auto;
+}
+
+form {
+  margin-top: 50px;
+
+  label {
+    font-weight: 500;
+  }
+}
+
+.btn {
+  background-color: $green;
+  color: #fff;
+  border: 0;
+  padding: 9px 15px;
+  @include transition($duration:0.2s,$ease:ease-out);
+  @include rounded($radius: 3px);
+  font-weight: bold;
+  @include smooth;
+  font-size: 0.8em;
+
+  &:hover {
+    background-color: $darkgreen;
+  }
+}
+
+.url-field {
+  border: 1px solid #DCDEE0;
+  @include rounded($radius: 3px);
+  font-size: 0.9em;
+  margin: 0 5px 1px;
+  min-width: 220px;
+  padding: 7px 10px;
+  vertical-align: middle;
+}
+
+/* Placeholder styles */
+.url-field::-webkit-input-placeholder {
+  color: rgba(132,154,166,1);
+  font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.url-field:-moz-placeholder {
+  color: rgba(132,154,166,1);
+  font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.url-field::-moz-placeholder {
+  color: rgba(132,154,166,1);
+  font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.url-field:-ms-input-placeholder {
+  color: rgba(132,154,166,1);
+  font-family: "europa", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
+input:focus:-moz-placeholder {
+  color:transparent;
+}
+
+.results {
+  background-color: $white;
+  border: 1px solid #dcdee0;
+  @include rounded($radius: 5px);
+  margin: 40px auto;
+  max-width: 550px;
+  overflow-y: scroll;
+  padding: 20px;
+
+  textarea {
+    border: 0;
+    color: $grayblue;
+    font-family: monospace;
+    font-size: 1em;
+    height: 230px;
+    margin: 0;
+    text-align: left;
+    width: 98%;
+  }
+}
+
+@media (max-width: 399px) {
+  .url-field {
+    margin-bottom: 20px;
+  }
+}
