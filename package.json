@@ -13,7 +13,7 @@
     "express-force-https": "^1.0.0",
     "express-nunjucks": "^2.2.3",
     "ioredis": "^3.2.2",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.0",
     "nunjucks": "^3.0.1",
     "prettyjson": "^1.2.1",
     "ssl-root-cas": "^1.2.4",
