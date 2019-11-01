@@ -7,6 +7,7 @@
   "author": "Stefano Sala <stefano@conversio.com>",
   "license": "MIT",
   "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-force-https": "^1.0.0",
@@ -16,8 +17,7 @@
     "nunjucks": "^3.0.1",
     "prettyjson": "^1.2.1",
     "ssl-root-cas": "^1.2.4",
-    "uuid": "^3.2.1",
-    "woocommerce": "^2.4.0"
+    "uuid": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
