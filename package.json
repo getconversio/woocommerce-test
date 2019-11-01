@@ -20,7 +20,7 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
+    "eslint": "^4.18.2",
     "eslint-config-conversio": "^1.0.4",
     "nodemon": "^1.14.12"
   },
